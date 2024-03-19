@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 a,
 a:visited,
 a:hover {
@@ -57,13 +61,10 @@ ul li {
   list-style: none;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
-}
-
-svg {
-  vertical-align: top;
 }
 
 input,

@@ -66,9 +66,15 @@
 
 // ============= Меню-бургер ============= //
 
-// import headerBurgerMenu from "./modules/header-burger-menu";
+import headerBurgerMenu from "./modules/header-burger-menu";
 
-// headerBurgerMenu();
+headerBurgerMenu();
+
+// Перемещаем иконки социальных сетей в хедере (на 768px) (мало места) //
+
+import moveSocials from "./modules/move-socials";
+
+moveSocials();
 
 // ==================== Popup-окно ===================== //
 
