@@ -127,6 +127,12 @@ body._lock {
   text-transform: uppercase;
   width: fit-content;
   font-size: proadrem(12, 16, $minWidthRemWithout, $maxWidthRemWithout);
+
+  // .subtitle_green
+  &_green {
+    background: var(--green-color);
+    color: var(--white-color);
+  }
 }
 .heading2 {
   font-family: "Cabin", sans-serif;
@@ -135,6 +141,8 @@ body._lock {
   font-size: proadrem(27, 45, $minWidthRemWithout, $maxWidthRemWithout);
   line-height: 1.16;
   color: var(--main-color);
+}
+.heading3 {
 }
 .paragraph {
   color: var(--gray-color);
