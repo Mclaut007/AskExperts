@@ -80,6 +80,10 @@
     flex-shrink: 0;
     align-items: center;
     gap: rem(25);
+    @media (max-width: $mobile) {
+      margin-top: rem(10);
+      gap: rem(32);
+    }
   }
 
   // .header__social-link
@@ -93,6 +97,9 @@
           fill: var(--green-color);
         }
       }
+    }
+    @media (max-width: $mobile) {
+      transform: scale(1.2);
     }
   }
 
