@@ -1,0 +1,195 @@
+.steps-experience {
+  // .steps-experience__container
+
+  &__container {
+    // padding: rem(150) rem(15) rem(152);
+    padding: proadrem(40, 150, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(30, 152, $minWidthRemWithout, $maxWidthRemWithout);
+    display: flex;
+    gap: rem(50);
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: proadrem(27, 50, $minWidthRemWithout, $tabletRemWithout);
+    }
+  }
+
+  // .steps-experience__steps
+
+  &__steps {
+  }
+}
+
+.steps {
+  width: rem(508);
+  max-width: 100%;
+  @media (max-width: $tablet) {
+    width: rem(600);
+  }
+  // .steps__subtitle
+
+  &__subtitle {
+    margin-bottom: rem(16);
+  }
+
+  // .steps__heading
+
+  &__heading {
+    margin-bottom: rem(16);
+  }
+
+  // .steps__paragraph
+
+  &__paragraph {
+    // margin-bottom: rem(40);
+    margin-bottom: proadrem(25, 40, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .steps__list
+
+  &__list {
+    max-width: rem(459);
+  }
+
+  // .steps__item
+
+  &__item {
+    border-top: 1px solid #c1c1c1;
+    // padding: rem(28) 0 rem(40);
+    padding: proadrem(15, 28, $minWidthRemWithout, $maxWidthRemWithout) 0
+      proadrem(20, 40, $minWidthRemWithout, $maxWidthRemWithout);
+    display: flex;
+    gap: rem(16);
+  }
+
+  // .steps__item-number
+
+  &__item-number {
+    // width: rem(52);
+    // height: rem(52);
+    width: proadrem(40, 52, $minWidthRemWithout, $maxWidthRemWithout);
+    height: proadrem(40, 52, $minWidthRemWithout, $maxWidthRemWithout);
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // font-size: rem(26);
+    font-size: proadrem(20, 26, $minWidthRemWithout, $maxWidthRemWithout);
+    font-weight: 600;
+    line-height: 1.16;
+    &_1 {
+      background: var(--yellow-color);
+    }
+    &_2 {
+      color: var(--white-color);
+      background: var(--green-color);
+    }
+    &_3 {
+      color: var(--white-color);
+      background: var(--main-color);
+    }
+  }
+
+  // .steps__item-content
+
+  &__item-content {
+  }
+
+  // .steps__item-title
+
+  &__item-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: 1.16;
+    margin-bottom: rem(10);
+  }
+
+  // .steps__item-text
+
+  &__item-text {
+  }
+}
+
+.experience {
+  width: rem(574);
+  max-width: 100%;
+  @media (max-width: $tablet) {
+    width: rem(600);
+  }
+  // .experience__subtitle
+
+  &__subtitle {
+    margin-bottom: rem(16);
+  }
+
+  // .experience__heading
+
+  &__heading {
+    margin-bottom: rem(16);
+  }
+
+  // .experience__text-content
+
+  &__text-content {
+    margin-bottom: rem(17);
+  }
+
+  // .experience__paragraph
+
+  &__paragraph {
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+
+  // .experience__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(14);
+    row-gap: rem(16);
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .experience__item
+
+  &__item {
+    border-radius: rem(20);
+    background: #fafafa;
+    // padding: rem(33) rem(23);
+    padding: proadrem(15, 33, $minWidthRemWithout, $maxWidthRemWithout)
+      proadrem(15, 23, $minWidthRemWithout, $maxWidthRemWithout)
+      proadrem(20, 33, $minWidthRemWithout, $maxWidthRemWithout);
+    border: 1px solid #eaeaea;
+  }
+
+  // .experience__item-img
+
+  &__item-img {
+    // margin-bottom: rem(22);
+    margin-bottom: proadrem(15, 22, $minWidthRemWithout, $maxWidthRemWithout);
+    width: proadrem(40, 54, $minWidthRemWithout, $maxWidthRemWithout);
+    height: proadrem(40, 54, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .experience__item-title
+
+  &__item-title {
+    font-size: rem(20);
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    line-height: 1.16;
+    margin-bottom: rem(10);
+  }
+
+  // .experience__item-text
+
+  &__item-text {
+  }
+}
