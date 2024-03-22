@@ -80,6 +80,18 @@ body._lock {
       }
     }
   }
+  &_yellow {
+    background: var(--yellow-color);
+    border: 1px solid var(--yellow-color);
+    color: var(--main-color);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background: var(--main-color);
+        border: 1px solid var(--main-color);
+        color: var(--white-color);
+      }
+    }
+  }
 }
 
 /*--------- visually-hidden ---------*/

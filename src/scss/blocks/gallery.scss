@@ -1,0 +1,208 @@
+.gallery {
+  // .gallery__header
+
+  &__header {
+    background:
+      url("./../img/gallery/bg.png") no-repeat center / cover,
+      var(--main-color);
+  }
+
+  // .gallery__header-container
+
+  &__header-container {
+    // padding: rem(203) rem(15) rem(307);
+    padding: proadrem(50, 203, $minWidthRemWithout, $maxWidthRemWithout) rem(15) rem(307);
+    @media (max-width: $mobileMiddle) {
+      padding-bottom: rem(295);
+    }
+  }
+
+  // .gallery__subtitle
+
+  &__subtitle {
+    margin-bottom: rem(8);
+  }
+
+  // .gallery__heading-button
+
+  &__heading-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: rem(40);
+    // margin-bottom: rem(45);
+    @media (max-width: $tablet) {
+      // flex-direction: column;
+      // align-items: flex-start;
+      display: block;
+    }
+  }
+
+  // .gallery__heading
+
+  &__heading {
+    width: rem(730);
+    max-width: 100%;
+    color: var(--white-color);
+    @media (max-width: $tablet) {
+      margin-bottom: rem(30);
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: rem(25);
+    }
+    @media (max-width: $mobileMiddle) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  // .gallery__button
+
+  &__button {
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        border: 1px solid var(--white-color);
+        background: transparent;
+      }
+    }
+  }
+
+  // .gallery__body
+
+  &__body {
+    padding-bottom: rem(54);
+  }
+
+  // .gallery__body-container
+
+  &__body-container {
+  }
+
+  // .gallery__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: rem(25);
+    // padding: rem(25);
+    gap: proadrem(15, 25, $mobileSmallRemWithout, $maxWidthRemWithout);
+    padding: proadrem(15, 25, $mobileSmallRemWithout, $maxWidthRemWithout);
+    border-radius: rem(30);
+    background: #fafafa;
+    margin-top: rem(-262);
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .gallery__item
+
+  &__item {
+    aspect-ratio: 1.06 / 1;
+    position: relative;
+    border-radius: rem(20);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  // .gallery__item-img
+
+  &__item-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  // .gallery__item-hover
+
+  &__item-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 24, 0.75);
+    backdrop-filter: blur(8px);
+    // padding: rem(23) rem(30) rem(24) rem(25);
+    padding: proadrem(15, 23, $minWidthRemWithout, $maxWidthRemWithout)
+      proadrem(15, 30, $minWidthRemWithout, $maxWidthRemWithout)
+      proadrem(15, 24, $minWidthRemWithout, $maxWidthRemWithout)
+      proadrem(15, 25, $minWidthRemWithout, $maxWidthRemWithout);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    &::before {
+      content: "";
+      width: 100%;
+      background: linear-gradient(360deg, #181818 0%, rgba(24, 24, 24, 0) 100%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      aspect-ratio: 1.8 / 1;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  // .gallery__item-plus
+
+  &__item-plus {
+    position: relative;
+    align-self: flex-end;
+    transform-origin: top right;
+    transition: opacity 0.3s ease;
+    @media (max-width: $desk) {
+      transform: scale(0.9);
+    }
+    @media (max-width: $tablet) {
+      transform: scale(0.8);
+    }
+    @media (max-width: $mobileMiddle) {
+      transform: scale(0.7);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  // .gallery__item-text
+
+  &__item-text {
+    position: relative;
+  }
+
+  // .gallery__item-title
+
+  &__item-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    // font-size: rem(25);
+    font-size: proadrem(18, 25, $minWidthRemWithout, $maxWidthRemWithout);
+    line-height: 1.16;
+    color: #fff;
+    margin-bottom: rem(4);
+  }
+
+  // .gallery__item-subtitle
+
+  &__item-subtitle {
+    color: var(--yellow-color);
+  }
+}
