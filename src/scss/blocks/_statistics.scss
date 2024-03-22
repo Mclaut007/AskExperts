@@ -1,0 +1,51 @@
+.statistics {
+  padding: rem(27) 0;
+  // .statistics__items
+
+  &__items {
+    max-width: rem(925);
+    padding: 0 rem(15);
+    margin: 0 auto;
+    display: grid;
+    gap: rem(40);
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    text-align: center;
+    @media (max-width: $tablet) {
+      justify-content: space-evenly;
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(2, auto);
+    }
+    // @media (max-width: $mobileMiddle) {
+    //   grid-template-columns: repeat(2, auto);
+    // }
+  }
+
+  // .statistics__item
+
+  &__item {
+    font-family: "Cabin", sans-serif;
+  }
+
+  // .statistics__number
+
+  &__number {
+    font-weight: 700;
+    // font-size: rem(50);
+    font-size: proadrem(28, 50, $minWidthRemWithout, $maxWidthRemWithout);
+    line-height: 1.16;
+    // margin-bottom: rem(12);
+    margin-bottom: proadrem(5, 12, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .statistics__text
+
+  &__text {
+    font-weight: 500;
+    font-size: rem(18);
+    @media (max-width: $mobileSmall) {
+      font-size: rem(16);
+    }
+  }
+}

@@ -64,18 +64,6 @@
 
 // import inputPhoneMask from "./modules/input-phone-mask.js";
 
-// ============= Меню-бургер ============= //
-
-import headerBurgerMenu from "./modules/header-burger-menu";
-
-headerBurgerMenu();
-
-// Перемещаем иконки социальных сетей в хедере (на 768px) (мало места) //
-
-import moveSocials from "./modules/move-socials";
-
-moveSocials();
-
 // ==================== Popup-окно ===================== //
 
 // import showHidePopup from "./modules/popup";
@@ -89,3 +77,21 @@ moveSocials();
 // import showHideFixedHeader from "./modules/hide-show-fixed-header";
 
 // showHideFixedHeader();
+
+// ============= Меню-бургер ============= //
+
+import headerBurgerMenu from "./modules/header-burger-menu";
+
+headerBurgerMenu();
+
+// Перемещаем иконки социальных сетей в хедере (на 768px) (мало места) //
+
+import moveSocials from "./modules/move-socials";
+
+moveSocials();
+
+// ===== Слайдер-swiper Client-feedback ===== //
+
+import clientFeedback from "./modules/client-feedback";
+
+clientFeedback();

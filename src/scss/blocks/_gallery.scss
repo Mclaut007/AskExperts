@@ -69,7 +69,7 @@
   // .gallery__body
 
   &__body {
-    padding-bottom: rem(54);
+    padding-bottom: rem(27);
   }
 
   // .gallery__body-container
@@ -109,6 +109,9 @@
       &:hover {
         box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, 0.25);
       }
+    }
+    @media (max-width: $mobileSmall) {
+      aspect-ratio: 1.5 / 1;
     }
   }
 
