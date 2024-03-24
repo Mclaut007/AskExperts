@@ -1,4 +1,6 @@
 .book {
+  // padding-bottom: rem(169);
+  padding-bottom: proadrem(20, 169, $minWidthRemWithout, $maxWidthRemWithout);
   // .book__container
 
   &__container {

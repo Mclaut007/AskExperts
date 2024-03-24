@@ -49,6 +49,7 @@ body._lock {
   min-height: rem(61);
   color: #353535;
   font-size: rem(18);
+  font-weight: 600;
   padding: rem(8) rem(10);
   border-radius: rem(50);
   // border: 1px solid var(--green);
@@ -155,6 +156,10 @@ body._lock {
   color: var(--main-color);
 }
 .heading3 {
+  font-family: "Cabin", sans-serif;
+  // font-size: rem(30);
+  font-weight: 600;
+  line-height: 1.16;
 }
 .paragraph {
   color: var(--gray-color);

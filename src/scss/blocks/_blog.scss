@@ -1,0 +1,231 @@
+.blog {
+  background: #f5f5f5;
+  // .blog__container
+
+  &__container {
+    // padding: rem(178) rem(15);
+    padding: proadrem(50, 178, $minWidthRemWithout, $maxWidthRemWithout) rem(15);
+  }
+
+  // .blog__subtitle
+
+  &__subtitle {
+    margin-bottom: rem(6);
+  }
+
+  // .blog__heading-button
+
+  &__heading-button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: rem(40);
+    row-gap: rem(20);
+    // margin-bottom: rem(46);
+    margin-bottom: proadrem(30, 46, $minWidthRemWithout, $maxWidthRemWithout);
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      // margin-bottom: rem(30);
+    }
+    // @media (max-width: $mobileMiddle) {
+    //   row-gap: rem(20);
+    // }
+  }
+
+  // .blog__heading
+
+  &__heading {
+    max-width: rem(508);
+    // max-width: proadrem(290, 508, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .blog__button
+
+  &__button {
+  }
+
+  // .blog__articles
+
+  &__articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(36);
+    @media (max-width: $desk) {
+      gap: rem(25);
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      width: rem(700);
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  // .blog__article
+
+  &__article {
+  }
+
+  // .blog__bottom-button-wrapper
+
+  &__bottom-button-wrapper {
+    flex-grow: 1;
+    @media (max-width: $desk) {
+      width: 100%;
+    }
+  }
+
+  // .blog_bottom-button
+
+  &__bottom-button {
+    margin-left: auto;
+    @media (max-width: $mobileSmall) {
+      margin-left: auto;
+    }
+  }
+
+  // .blog_bottom-button-even
+
+  &__bottom-button_even {
+    color: var(--main-color);
+    border: 1px solid #c1c1c1;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        border: 1px solid var(--yellow-color);
+        background: var(--yellow-color);
+      }
+    }
+  }
+}
+
+.blog-article {
+  // .blog-article__img-wrapper
+
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: rem(20);
+    aspect-ratio: 1.82 / 1;
+    margin-bottom: rem(28);
+  }
+
+  // .blog-article__img
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  // .blog-article__content
+
+  &__content {
+  }
+
+  // .blog-article__heading
+
+  &__heading {
+    // font-size: rem(30);
+    font-size: proadrem(22, 30, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: rem(12);
+    @media (min-width: $mobileSmall) {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  // .blog-article__paragraph
+
+  &__paragraph {
+    margin-bottom: rem(10);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @media (max-width: $mobileSmall) {
+      -webkit-line-clamp: 4;
+    }
+  }
+
+  // .blog-article__bottom
+
+  &__bottom {
+    display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    gap: rem(20);
+    align-items: center;
+    color: var(--gray-color);
+    padding: rem(15) 0;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    @media (max-width: $desk) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: rem(14);
+      // justify-content: space-between;
+      // gap: rem(10);
+    }
+  }
+
+  // .blog-article__author
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+  }
+
+  // .blog-article__author-img-wrapper
+
+  &__author-img-wrapper {
+    width: rem(60);
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    @media (max-width: $tablet) {
+      width: rem(50);
+    }
+    @media (max-width: $mobileSmall) {
+      // width: rem(35);
+      display: none;
+    }
+  }
+
+  // .blog-article__author-img
+
+  &__author-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  // .blog-article__author-name
+
+  &__author-name {
+  }
+
+  // .blog-article__divider
+
+  &__divider {
+    width: rem(1);
+    height: rem(14);
+    background: var(--gray-color);
+  }
+
+  // .blog-article__date
+
+  &__date {
+  }
+}
