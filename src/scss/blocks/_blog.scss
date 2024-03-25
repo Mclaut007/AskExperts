@@ -4,7 +4,8 @@
 
   &__container {
     // padding: rem(178) rem(15);
-    padding: proadrem(50, 178, $minWidthRemWithout, $maxWidthRemWithout) rem(15);
+    padding: proadrem(50, 178, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(40, 178, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .blog__subtitle
