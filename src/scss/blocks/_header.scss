@@ -151,15 +151,15 @@
   // .header__logo
 
   &__logo {
-    display: flex;
-    gap: rem(11);
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        & .logo__img {
-          transform: scale(1.05);
-        }
-      }
-    }
+    // display: flex;
+    // gap: rem(11);
+    // @media (hover: hover) and (pointer: fine) {
+    //   &:hover {
+    //     & .logo__img {
+    //       transform: scale(1.05);
+    //     }
+    //   }
+    // }
   }
 
   // .header__menu
@@ -245,24 +245,7 @@
   &__menu-icons {
   }
 }
-.logo {
-  flex-shrink: 0;
-  // .logo__img
 
-  &__img {
-    transition: transform 0.3s ease;
-  }
-
-  // .logo__text
-
-  &__text {
-    font-family: "Cabin", sans-serif;
-    font-weight: 600;
-    // font-size: rem(30);
-    font-size: proadrem(20, 30, $minWidthRemWithout, $maxWidthRemWithout);
-    line-height: 1.05;
-  }
-}
 .menu {
   // .menu__list
 
